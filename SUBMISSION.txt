@@ -1,0 +1,101 @@
+Status : INCOMPLETE - at least one check did not pass
+Points : 33 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+
+CS 1430 Assignment 2: The Cost of College
+GitHub user : unknown
+Repository  : unknown
+Commit      : unknown
+Message     : 
+Author      : 
+Committed   : 
+Checked     : 2026-10-19 21:53:30 Central Daylight Time
+Python      : 3.14.7
+
+================================================================
+CHECK RESULTS
+================================================================
+
+--- Toolchain ---
+[PASS] Python 3.14.7 is installed
+[PASS] main.py is in this folder
+[PASS] main.py runs without an error
+[PASS] The constants are unchanged
+[PASS] The launch lines are in place
+
+--- Your five functions (6 points each) ---
+[PASS] cost_per_semester gives back the right values  (6/6 pts)
+[PASS] cost_per_month gives back the right values  (6/6 pts)
+[PASS] cost_per_day gives back the right values  (6/6 pts)
+[PASS] cost_per_credit gives back the right values  (6/6 pts)
+[FAIL] cost_per_class gives back the right values  (0/6 pts)
+   > Test 1 of 3 (Example A): for annual_cost = 14601, credits = 15, expected 32.45 but got 162.2333
+   > That is the whole semester over 45 meetings. Use only CS 1430's share of the semester.
+
+--- Your program (10 points) ---
+[PASS] The menu runs from start to Q without an error  (5/5 pts)
+[FAIL] Options 1 to 5 print all five amounts  (4/5 pts)
+   > Test 1 of 3 (Example A): with cost 14601 and 15 credits, these amounts were not found in output:
+   >     32.45  (from cost_per_class)
+   > Each amount must be printed with exactly two decimals, like 97.34.
+   > check.py types: cost, credits, 1, 2, 3, 4, 5, Q.
+
+--- Git and GitHub (required for your points to count) ---
+[PASS] Git is installed
+[PASS] This folder is a Git repository
+[FAIL] You have committed your own work
+   > So far there is only the template's first commit.
+   > In Source Control, type a message and click Commit.
+
+POINTS FROM check.py: 33 / 40
+
+================================================================
+PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
+================================================================
+Enter the annual cost of college:Enter the number of credits you are taking this semester:1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. Cost per week
+Q. Quit
+Choose an option: One semester costs: $7300.50
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. Cost per week
+Q. Quit
+Choose an option: One month costs: $1622.33
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. Cost per week
+Q. Quit
+Choose an option: One class day costs: $97.34
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. Cost per week
+Q. Quit
+Choose an option: One credit costs: $486.70
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. Cost per week
+Q. Quit
+Choose an option: One CS 1430 class meeting costs: $162.23
+1. Cost per semester
+2. Cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. Cost per week
+Q. Quit
+Choose an option:
