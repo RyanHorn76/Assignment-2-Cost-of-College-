@@ -43,7 +43,7 @@ def cost_per_credit(annual_cost, credits):
 
 def cost_per_class(annual_cost, credits):
     """Give back what one 50-minute CS 1430 class meeting costs."""
-    class_cost = annual_cost / (SEMESTERS_PER_YEAR * CS1430_MEETINGS_PER_SEMESTER)
+    class_cost = (CS1430_CREDITS / credits ) * (cost_per_semester(annual_cost) /(CS1430_MEETINGS_PER_SEMESTER))
     return class_cost
 
 def cost_per_week(annual_cost):
@@ -55,8 +55,8 @@ def cost_per_week(annual_cost):
 # ---- PROGRAM ----
 
 def main():
-    annual_cost = float(input("Enter the annual cost of college:"))
-    credits = int(input("Enter the number of credits you are taking this semester:"))
+    annual_cost = float(input("Enter the annual cost of college: "))
+    credits = int(input("Enter the number of credits you are taking this semester: "))
     while True:
         print("1. Cost per semester")
         print("2. Cost per month")

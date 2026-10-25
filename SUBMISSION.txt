@@ -1,5 +1,5 @@
 Status : INCOMPLETE - at least one check did not pass
-Points : 33 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+Points : 40 / 40  (from check.py; counts only when the Git and GitHub checks pass)
 
 CS 1430 Assignment 2: The Cost of College
 GitHub user : unknown
@@ -8,7 +8,7 @@ Commit      : unknown
 Message     : 
 Author      : 
 Committed   : 
-Checked     : 2026-10-19 21:53:30 Central Daylight Time
+Checked     : 2026-10-25 13:14:10 Central Daylight Time
 Python      : 3.14.7
 
 ================================================================
@@ -27,31 +27,26 @@ CHECK RESULTS
 [PASS] cost_per_month gives back the right values  (6/6 pts)
 [PASS] cost_per_day gives back the right values  (6/6 pts)
 [PASS] cost_per_credit gives back the right values  (6/6 pts)
-[FAIL] cost_per_class gives back the right values  (0/6 pts)
-   > Test 1 of 3 (Example A): for annual_cost = 14601, credits = 15, expected 32.45 but got 162.2333
-   > That is the whole semester over 45 meetings. Use only CS 1430's share of the semester.
+[PASS] cost_per_class gives back the right values  (6/6 pts)
 
 --- Your program (10 points) ---
 [PASS] The menu runs from start to Q without an error  (5/5 pts)
-[FAIL] Options 1 to 5 print all five amounts  (4/5 pts)
-   > Test 1 of 3 (Example A): with cost 14601 and 15 credits, these amounts were not found in output:
-   >     32.45  (from cost_per_class)
-   > Each amount must be printed with exactly two decimals, like 97.34.
-   > check.py types: cost, credits, 1, 2, 3, 4, 5, Q.
+[PASS] Options 1 to 5 print all five amounts  (5/5 pts)
 
 --- Git and GitHub (required for your points to count) ---
 [PASS] Git is installed
 [PASS] This folder is a Git repository
-[FAIL] You have committed your own work
-   > So far there is only the template's first commit.
-   > In Source Control, type a message and click Commit.
+[PASS] You have committed your own work
+[FAIL] Your latest changes are committed
+   > main.py has changes that are not committed yet.
+   > Save, then Commit in Source Control, so GitHub has what check.py tested.
 
-POINTS FROM check.py: 33 / 40
+POINTS FROM check.py: 40 / 40
 
 ================================================================
 PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
 ================================================================
-Enter the annual cost of college:Enter the number of credits you are taking this semester:1. Cost per semester
+Enter the annual cost of college: Enter the number of credits you are taking this semester: 1. Cost per semester
 2. Cost per month
 3. Cost per day
 4. Cost per credit
@@ -90,7 +85,7 @@ Choose an option: One credit costs: $486.70
 5. Cost per class
 6. Cost per week
 Q. Quit
-Choose an option: One CS 1430 class meeting costs: $162.23
+Choose an option: One CS 1430 class meeting costs: $32.45
 1. Cost per semester
 2. Cost per month
 3. Cost per day
