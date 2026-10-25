@@ -46,10 +46,10 @@ def cost_per_class(annual_cost, credits):
     class_cost = (CS1430_CREDITS / credits ) * (cost_per_semester(annual_cost) /(CS1430_MEETINGS_PER_SEMESTER))
     return class_cost
 
-def cost_per_week(annual_cost):
-    """Give back what one week of the academic year costs."""
-    week_cost = annual_cost / (SEMESTERS_PER_YEAR * (CLASS_DAYS_PER_SEMESTER / 5))
-    return week_cost
+def cost_per_minute(annual_cost, credits):
+    """Give back what one minute of being late to C 1430 costs."""
+    minute_cost = cost_per_class(annual_cost, credits) / 50
+    return minute_cost
 
 
 # ---- PROGRAM ----
@@ -63,7 +63,7 @@ def main():
         print("3. Cost per day")
         print("4. Cost per credit")
         print("5. Cost per class")
-        print("6. Cost per week")
+        print("6. Cost if you are one minute late to CS1430")
         print("Q. Quit")
 
         choice = input("Choose an option: ")
@@ -92,8 +92,8 @@ def main():
             print(f"One CS 1430 class meeting costs: ${class_cost:.2f}")
 
         elif choice == "6":
-            week = cost_per_week(annual_cost)
-            print(f"One week costs: ${week:.2f}")
+            minute = cost_per_minute(annual_cost, credits)
+            print(f"One minute costs: ${minute:.2f}")
 
 
 # ---- LAUNCH: do not change ----
